@@ -1,38 +1,115 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  color: rgb(88, 10, 160);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  box-shadow: 0px 5px 20px rgba(88, 10, 160, 0.6);
+  background-color: rgb(214, 167, 255);
+  text-shadow: 3px 3px 4px rgba(75, 12, 134, 0.6);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 20px;
+  position: relative;
 }
+.header div {
+  display: flex;
 
-.App-link {
-  color: #61dafb;
+  align-items: center;
+  gap: 5;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.titleStar5 {
+  font-size: 1.7rem;
+}
+.titleStar4 {
+  font-size: 1.5rem;
+}
+.titleStar3 {
+  font-size: 1.3rem;
+}
+.titleStar2 {
+  font-size: 1.1rem;
+}
+.titleStar1 {
+  font-size: 1rem;
+}
+.homeIcon {
+  font-size: 2rem;
+  color: rgb(64, 6, 118);
+  font-weight: 700;
+}
+.homeLink {
+  position: absolute;
+  left: 20px;
+  top: 8px;
+}
+.homeIcon:hover {
+  cursor: pointer;
+  color: tomato;
+  font-size: 2.2rem;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.titleIconsWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  gap: 20px;
+}
+.titleIcon {
+  font-size: 1.7rem;
+  color: rgb(90, 10, 164);
+}
+.titleIcon:hover {
+  cursor: pointer;
+}
+h2 {
+  color: rgb(61, 11, 107);
+  width: 50%;
+  text-align: center;
+}
+.errorMessage {
+  margin-top: 50px;
+  color: rgb(172, 7, 7);
+}
+.searchingMessage,
+.loading {
+  margin-top: 50px;
+}
+.filterWrapper,
+.sortWrapper {
+  position: relative;
+}
+.filterWrapper ul,
+.sortWrapper ul {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  color: rgb(44, 43, 43);
+  background-color: white;
+  padding: 7px;
+  width: 150px;
+  display: none;
+  z-index: 99;
+}
+.filterWrapper li,
+.sortWrapper li {
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.filterWrapper li:hover,
+.sortWrapper li:hover {
+  background-color: rgb(185, 219, 249);
+}
+.filterWrapper:hover ul,
+.sortWrapper:hover ul {
+  display: block;
 }

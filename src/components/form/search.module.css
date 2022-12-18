@@ -1,0 +1,54 @@
+form {
+  display: block;
+}
+input.search {
+  border-radius: 7px;
+  color: rgb(45, 44, 44);
+  /*width: 100%;
+  padding: 3px 10px;*/
+  border: 1px solid rgb(146, 144, 144);
+}
+input.search:focus {
+  outline: 2px solid rgb(88, 88, 235);
+}
+.formActive input.search {
+  width: 100%;
+  padding: 3px 5px;
+}
+.formDeactive input.search {
+  display: none;
+}
+
+.formActive {
+  width: 1px;
+  animation: longewidth 1s ease-in-out forwards;
+}
+.formDeactive {
+  display: none;
+
+  animation: displayNone ease-in-out 1s forwards;
+}
+@keyframes longewidth {
+  from {
+    width: 1px;
+  }
+  to {
+    width: 50%;
+  }
+}
+@keyframes displayNone {
+  from {
+    display: block;
+  }
+  to {
+    display: none;
+  }
+}
+@keyframes nowidth {
+  from {
+    width: 1px;
+  }
+  to {
+    width: 50%;
+  }
+}

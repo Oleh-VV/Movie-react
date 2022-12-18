@@ -1,0 +1,12 @@
+.postList {
+  padding: 5px;
+  width: 90%;
+  display: flex;
+  gap: 5px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 10px auto;
+}
+.loading {
+  margin-top: 50px;
+}
