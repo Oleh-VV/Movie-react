@@ -76,10 +76,13 @@ function App() {
       <div className="App">
         {" "}
         <Routes>
-          <Route path="/" element={<MainLayout homeFunction={getHomepage} />}>
-            <Route path="/:slug" element={<MoviePage />} />
+          <Route
+            path="/movie-react"
+            element={<MainLayout homeFunction={getHomepage} />}
+          >
+            <Route path="/movie-react/:slug" element={<MoviePage />} />
             <Route
-              path="/"
+              path="/movie-react"
               element={
                 error ? (
                   <h1 className="errorMessage">{error}</h1>
